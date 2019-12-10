@@ -3,11 +3,17 @@ class ApaliTaxi{
         this.distance = distance;
         this.carType = carType;
     }
-  cap = () =>{
-    let capType = this.carType.toLowerCase()
-    minicap()
-    suvcap()
-    sedancap()
+    cap = () =>{
+        // let capType = this.carType.toLowerCase()
+        minicap()
+        suvcap()
+        sedancap()
+    }
+
+    minicap = () =>{
+        if(this.distance < 75){
+            console.log(this.distance)
+        }
     }
 
 }
